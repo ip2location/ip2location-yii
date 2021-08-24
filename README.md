@@ -1,5 +1,5 @@
 # IP2Location Yii extension
-IP2Location Yii extension enables the user to find the country, region, city, coordinates, zip code, time zone, ISP, domain name, connection type, area code, weather, MCC, MNC, mobile brand name, elevation and usage type that any IP address or hostname originates from. It has been optimized for speed and memory utilization. Developers can use the API to query all IP2Location BIN databases or web service for applications written using Yii.
+IP2Location Yii extension enables the user to find the country, region, city, coordinates, zip code, time zone, ISP, domain name, connection type, area code, weather, MCC, MNC, mobile brand name, elevation, usage type, IP address type and IAB advertising category from IP address using IP2Location database. It has been optimized for speed and memory utilization. Developers can use the API to query all IP2Location BIN databases or web service for applications written using Yii.
 
 
 ## INSTALLATION
@@ -63,6 +63,8 @@ echo 'MNC: ' . $record['mnc'] . '<br>';
 echo 'Mobile Carrier Name: ' . $record['mobileCarrierName'] . '<br>';
 echo 'Elevation: ' . $record['elevation'] . '<br>';
 echo 'Usage Type: ' . $record['usageType'] . '<br>';
+echo 'Address Type: ' . $record['addressType'] . '<br>';
+echo 'Category: ' . $record['category'] . '<br>';
 
 $record = $IP2Location->getWebService('8.8.8.8');
 echo 'Result from Web service:<br>';
