@@ -1,11 +1,10 @@
 # IP2Location Yii extension
-IP2Location Yii extension enables the user to find the country, region, city, coordinates, zip code, time zone, ISP, domain name, connection type, area code, weather, MCC, MNC, mobile brand name, elevation, usage type, IP address type and IAB advertising category from IP address using IP2Location database. It has been optimized for speed and memory utilization. Developers can use the API to query all IP2Location BIN databases or web service for applications written using Yii.
-
+IP2Location Yii extension enables the user to find the country, region, city, coordinates, zip code, time zone, ISP, domain name, connection type, area code, weather, MCC, MNC, mobile brand name, elevation, usage type, IP address type and IAB advertising category from IP address using IP2Location database. It has been optimized for speed and memory utilization. Developers can use the API to query all IP2Location BIN databases or web service for applications written using Yii
 
 ## INSTALLATION
 For Yii2
 
-1. Run the command: `php composer.phar require ip2location/ip2location-yii` to download the extension into the Yii2 framework.
+1. Run the command: `composer require ip2location/ip2location-yii` to download the extension into the Yii2 framework.
 2. Download latest IP2Location BIN database
     - IP2Location free LITE database at https://lite.ip2location.com
     - IP2Location commercial database at https://www.ip2location.com
@@ -21,6 +20,12 @@ use IP2LocationYii\IP2Location_Yii;
 
 // (required) Define IP2Location database path.
 define('IP2LOCATION_DATABASE', '/path/to/ip2location/database');
+
+// (required) Define IP2Location.io API key.
+define('IP2LOCATION_IO_API_KEY', 'your_api_key');
+
+// (optional) Define Translation information. Refer to https://www.ip2location.io/ip2location-documentation for available languages.
+define('IP2LOCATION_IO_LANGUAGE', 'en');
 
 // (required) Define IP2Location API key.
 define('IP2LOCATION_API_KEY', 'your_api_key');
@@ -79,7 +84,7 @@ This library requires IP2Location BIN data file or IP2Location API key to functi
 * IP2Location LITE BIN Data (Free): https://lite.ip2location.com
 * IP2Location Commercial BIN Data (Comprehensive): https://www.ip2location.com
 
-You can also sign up for [IP2Location Web Service](https://www.ip2location.com/web-service/ip2location) to get one free API key.
+You can also sign up for [IP2Location Web Service](https://www.ip2location.com/web-service/ip2location) or [IP2Location.io IP GEOLOCATION API](https://www.ip2location.io/sign-up) to get one free API key.
 
 
 ## SUPPORT
