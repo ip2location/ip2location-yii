@@ -55,6 +55,7 @@ class IP2Location_Yii
 				'key'     => IP2LOCATION_IO_API_KEY,
 				'ip'      => $ip,
 				'lang'    => ((defined('IP2LOCATION_IO_LANGUAGE')) ? IP2LOCATION_IO_LANGUAGE : ''),
+				'source'  => 'yii-ipl',
 			];
 			// Remove parameters without values
 			$params = array_filter($params);
